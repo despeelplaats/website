@@ -1,0 +1,142 @@
+body {
+    background-color: #FECDDC; /* Light Pink */
+    font-family: "aileron", serif;
+    color: #222fe6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+.header {
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.header p{
+    margin: 0;
+}
+.speelplaats{
+    width: 40%;
+    max-width: 300px;
+    padding: 0px 10px 0px 10px;
+}
+
+.speelplaats path {  
+    fill: #222fe6 !important;
+}
+
+.anna {
+    width: 20%;
+    max-width: 100px;
+    padding: 40px 40px 20px 40px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #222fe6; 
+}
+#movingtext {
+    transform:translate3d(0,0,0); 
+    z-index: 1000; 
+    fill: #B0AFF5; 
+}
+
+.subtitel{
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 40px;
+    font-size: 20px;
+    color: #222fe6;
+    font-family: "Playwrite ES Guides", serif;
+    width: 35%;
+    background-color: #B0AFF5;
+}
+.subtitel path{
+    fill: #222fe6;
+}
+
+
+/* FLEXBOX for side-by-side layout */
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 0px 0px 0px 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#text-path {
+    color: #222fe6;
+}
+
+.text {
+    flex: 1; /* Allows text to take available space */
+}
+
+.sideimage {
+    width: 25%; /*just for better scaling */
+    border-radius: 0;
+    padding: 50px; 
+}
+
+.quote {
+  font-family: "alconica", serif;
+  font-style: italic;
+  font-weight: 400;
+  color: #CC9681;
+  font-size: 15px;
+}
+
+
+p {
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+/* RESPONSIVE: Stack items on smaller screens 
+@media (max-width: 600px) {
+    .section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image {
+        width: 120px;
+    }
+}
+    */
+
+ul {
+  display: flex; /* Makes list items align in one row */
+  justify-content: center; /* Centers them horizontally */
+  align-items: center; /* Aligns items vertically */
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none; /* Removes bullet points */
+  margin: 0 15px; /* Adds spacing between items */
+}
+
+.footer {
+    text-align: center;
+    font-size: 14px;
+    color:  #09096e;
+    margin-top: 20px;
+}
+
+.ball {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.8;
+    z-index: -1;
+  }
