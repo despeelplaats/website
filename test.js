@@ -1,21 +1,22 @@
 const colors = ["#ff0000", "#bc9bff"];
-
-const numBalls = 100
-;
+const numBalls = 20;
 const balls = [];
+const container = document.createElement("div");
+container.classList.add("ballscontainer");
+document.body.appendChild(container);
 
 for (let i = 0; i < numBalls; i++) {
   let ball = document.createElement("div");
   ball.classList.add("ball");
   ball.style.background = colors[Math.floor(Math.random() * colors.length)];
-  ball.style.left = `${Math.floor(Math.random() * 100)}vw`;
-  ball.style.top = `${Math.floor(Math.random() * 300)}vh`;
+  ball.style.left = `${Math.floor(Math.random() * 80)}vw`;
+  ball.style.top = `${Math.floor(Math.random() * 80)}vh`;
   ball.style.transform = `scale(${Math.random()})`;
   ball.style.width = `${Math.random()}em`;
   ball.style.height = ball.style.width;
   
   balls.push(ball);
-  document.body.append(ball);
+  container.appendChild(ball);
 }
 
 // Keyframes
@@ -42,10 +43,10 @@ balls.forEach((el, i, ra) => {
 
 
 //favicoms animeren
-let icons = ["images/anna1.png", "images/anna2.png"];
+let icons = ["images/favicon1.png", "images/favicon2.png","images/favicon3.png","images/favicon4.png","images/favicon5.png"];
 let i = 0;
 
 setInterval(() => {
   document.querySelector("link[rel='icon']").href = icons[i];
   i = (i + 1) % icons.length;
-}, 500); 
+}, 1000); 
