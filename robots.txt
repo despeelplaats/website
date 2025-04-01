@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://despeelpaats.github.io/sitemap.xml
+Sitemap: https://despeelplaats.github.io/sitemap.xml
